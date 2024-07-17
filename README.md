@@ -4,7 +4,7 @@ Source code for Devtiro's Kotlin & Spring Boot course/
 
 Check out the full course on YouTube:
 
-[![Course Kotlin & Spring Boot](https://img.youtube.com/vi/MeDdJ8kaof8/0.jpg)](https://www.youtube.com/watch?v=MeDdJ8kaof8)
+[![Course Kotlin & Spring Boot](https://img.youtube.com/vi/7iJ0NWRaWic/0.jpg)](https://www.youtube.com/watch?v=7iJ0NWRaWic)
 
 ## Need Support?
 Need some support completing the course? [Click here to check out how to get support from me and support the channel](https://bit.ly/3y05IMl) .
