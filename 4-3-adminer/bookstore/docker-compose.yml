@@ -1,0 +1,28 @@
+services:
+  # Our PostgreSQL database
+  db:
+    # The Docker image of postgres -- we're using the latest.
+    image: postgres:latest
+    # The ports to expose to the host container
+    # 5432 is the default PostgreSQL port
+    ports:
+      - "5432:5432"
+    # If we accidentally kill the running container, Docker Compose
+    # will restart it.
+    restart: always
+    # The PostgreSQL Docker container uses environment variables to
+    # read configuration, here we set the password.
+    # ⚠️ - Do no store plaintext passwords in source control. We
+    #      do so here as this is a tutorial.
+    environment:
+      POSTGRES_PASSWORD: changemeinprod!
+
+  adminer:
+    # The Docker image for Adminer, again using the latest.
+    image: adminer:latest
+    # Restart if killed.
+    restart: always
+    # Adminer runs on 8080, we'll map that to 8888 as our
+    # app runs on 8080.
+    ports:
+      - 8888:8080
